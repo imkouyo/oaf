@@ -1,0 +1,11 @@
+<div class="login-layout">
+    <p class="login-tittle">Sign-in</p>
+    <form [formGroup]="loginForm">
+        <fieldset class="form-layout">
+            <input #account type="text" name="account" placeholder="Please input your Account name" formControlName="account" required  autocomplete="off"/>
+            <input #password type="password" name ="password" placeholder="Please input Password" formControlName="password" required/>
+        </fieldset>
+    </form>
+    <button class="login-btn" (click)="onClickSubmit(loginForm)">Send</button>
+</div>
+
